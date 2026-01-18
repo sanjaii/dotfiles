@@ -1,0 +1,45 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    border: none;
+    border-radius: 0;
+}
+
+window#waybar {
+    background-color: rgba(26, 27, 38, 0.8); /* Semi-transparent dark */
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+    border-bottom: 2px solid rgba(100, 114, 125, 0.3);
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+#workspaces button.active {
+    color: #7aa2f7;
+    border-bottom: 2px solid #7aa2f7;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#tray,
+#window {
+    padding: 0 10px;
+    margin: 0 4px;
+}
+
+/* Individual Module Colors */
+#clock { color: #a9b1d6; }
+#cpu { color: #f7768e; }
+#memory { color: #9ece6a; }
+#battery { color: #e0af68; }
+#network { color: #7dcfff; }
+#pulseaudio { color: #bb9af7; }

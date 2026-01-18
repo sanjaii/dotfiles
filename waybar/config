@@ -1,0 +1,77 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 28,
+    "spacing": 4,
+    "exclusive": true,
+    "reload_style_on_change": true,
+
+    "modules-left": [
+        "hyprland/workspaces",
+        "hyprland/window"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "network",
+        "cpu",
+        "memory",
+        "battery",
+        "tray"
+    ],
+
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "on-click": "activate"
+    },
+
+    "hyprland/window": {
+        "format": "{}",
+        "max-length": 40,
+        "separate-outputs": true
+    },
+
+    "tray": {
+        "spacing": 10
+    },
+
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+
+    "cpu": {
+        "format": " {usage}%",
+        "tooltip": false
+    },
+
+    "memory": {
+        "format": " {}%"
+    },
+
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-icons": ["", "", "", "", ""]
+    },
+
+    "network": {
+        "format-wifi": " {essid}",
+        "format-ethernet": "󰈀 {ifname}",
+        "format-disconnected": "⚠ Disconnected"
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": " Muted",
+        "format-icons": {
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    }
+}
