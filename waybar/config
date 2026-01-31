@@ -1,3 +1,4 @@
+
 {
     "layer": "top",
     "position": "top",
@@ -38,8 +39,9 @@
     },
 
     "clock": {
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "format": "{:%H:%M}",
+        "format-alt": "{:%Y-%m-%d}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
 
     "cpu": {
@@ -48,7 +50,7 @@
     },
 
     "memory": {
-        "format": " {}%"
+        "format": " {percentage}%"
     },
 
     "battery": {
@@ -57,6 +59,7 @@
             "critical": 15
         },
         "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
         "format-icons": ["", "", "", "", ""]
     },
 
@@ -75,3 +78,4 @@
         "on-click": "pavucontrol"
     }
 }
+
